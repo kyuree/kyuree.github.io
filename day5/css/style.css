@@ -1,0 +1,88 @@
+html {
+font-size: 10px;
+}
+
+body {
+    margin: 0;
+    background: url("../images/leading-21px.png");
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+    font-size:1.4rem;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color:#333741;
+}
+
+.container {
+    width:819px;
+    margin:8.4rem auto 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin: 0 auto 4.2rem auto;
+}
+
+img {
+    vertical-align: top;
+}
+.main {
+    margin: 0;
+    padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+}
+
+h1 {
+    font-size: 5.463rem;
+    line-height: 6.3rem;
+    font-weight: 300;
+    color:#333741;
+}
+
+h2 {
+    font-size: 3.169rem;
+    line-height: 4.2rem;
+    color:#333741;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.838rem;
+    line-height: 2.1rem;
+    color:#787f94;
+}
+
+h4 {
+    font-size: 1.563rem;
+    line-height: 2.1rem;
+    color:#47494e;
+}
+
+h5 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color:#787f94;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+    font-size: 1.4rem;
+    letter-spacing: -0.02em;
+}
+
+.header{
+
+}
+
+.main {
+
+}
+
+.footer {
+
+}

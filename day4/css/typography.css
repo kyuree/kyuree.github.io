@@ -1,0 +1,64 @@
+html {
+    font-size: 10px;
+}
+
+
+body {
+    margin: 0;
+    /* 가이드라인 (baseline) */
+    background: url("../images/leading-21px.png");
+    /* 상속되는 속성: 부모 -> 자식 */
+    font-family: 'Noto Sans', sans-serif;
+    font-size:1.4rem;
+    line-height: 1.5;
+    letter-spacing: -0.025em;
+    color: #666;
+}
+
+/* 페이지 요소를 담을 컨테이너 */
+
+.container {
+    width: 1180px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(221, 221, 221, 0.3);
+}
+
+/**
+ * 타이포그래피 디자인
+ */
+ 
+
+/* 본문 (단락) 디자인 */
+p {
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+}
+
+/* 제목 (단락) 디자인 Type Scale *1.25*/
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0; margin-bottom: 2.1rem; letter-spacing: -0.025em;
+}
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+
+h6 {
+    font-size:1.4rem; line-height: 2.1rem;
+}
+h5 {
+    font-size:1.75rem; line-height: 2.1rem;
+}
+h4 {
+    font-size:2.188rem; line-height: 4.2rem;
+}
+h3 {
+    font-size:2.734rem; line-height: 4.2rem;
+}
+h2 {
+    font-size:3.418rem; line-height: 4.2rem;
+}
+h1 {
+    font-size:4.272rem; line-height: 6.3rem;
+}

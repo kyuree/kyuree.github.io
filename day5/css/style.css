@@ -74,7 +74,7 @@ h6 {
 ul, ol {
     /* 웹 브라우저 기본 스타일 제거 (user agent style) */
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 6.3rem;
     padding-left: 0;
     list-style-type: none;
 }
@@ -88,16 +88,53 @@ ol {
 
 }
 
+dl {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
 /* 목록 항목(아이템) 디자인 */
 li {
     margin-bottom: 4.2rem;
 }
 
+dt {
+    margin-bottom: 2.1rem;
+    color:#2b2c2f;
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 2.1rem;
+    margin-left: 0;
+}
 /* 페이지 컨테이너 */
 .container {
     width:820px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.header {
+    margin-top: 8.4rem;
+    text-align: center;
+}
+
+
+.main {
+    margin-top: 4.2rem;
+}
+
+
+.footer {
+    margin-top: 6.3rem;
+    margin-bottom: 6.3rem;
+}
+
+.footer h5 {
+    text-align: right;
 }
 
 /* 하이퍼링크 디자인 */

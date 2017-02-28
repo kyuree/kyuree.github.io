@@ -9,7 +9,6 @@ html {
 body {
     min-height: 100vh; 
     margin: 0;
-    background: url("../images/leading-21px.png");
     /* 본문 디자인 (상속) */
     /* font: [두께] [기울기] [응용] size [/행간] 글꼴; 속기형 */
     font: 400 1.4rem/1.5 "spoqa Han Sans";
@@ -19,6 +18,10 @@ body {
     line-height: 1.5; /* CSS는 상속이라는 매커니즘을 사용하다 보니 단위를 붙이면 버그가 발생 */
     color:#333741;*/
     letter-spacing: -0.02em;
+}
+
+body:hover {
+    background: url("../images/leading-21px.png");
 }
 
 

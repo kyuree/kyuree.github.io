@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body {
+    margin:0;
+}
+
+.wrapper {
+    width:640px;
+    margin: 20px auto;
+}
+
+.block_box,
+.inline_box {
+    /* width, height 속성은 inline 요소에는 적용되지 않는다. */
+    width:200px;
+    height: 200px;
+    /*padding-top, padding-bottom은 inline 요소에는 적용되지 않습니다. (간격이 벌어지지 않는다.)*/
+    /*margin-top, margin-bottom은 inline 요소에는 적용되지 않습니다. (간격이 벌어지지 않는다.)*/
+    /*border-top, border-bottom은 inline 요소에는 적용되지 않습니다. (간격이 벌어지지 않는다.)*/
+    /*inline 속성에는 레이아웃과 관련된 상하의 속성이 적용되지 않는다.*/
+    padding:20px;
+    margin:20px;
+    border:10px solid red;
+    background: #aaa;
+    color:#fff;
+}
+
+hr {
+    margin:20px 0;
+    border:0;
+    border-bottom:1px solid #ddd;
+}
+
+
+.inline_block_box {
+    /* 인라인 블록요소 - img, input,...  */
+    /*
+    기본적으로는 inline 처럼 보이지만, block 처럼 레이아웃 설정이 가능하다
+    상/하 공간 설정 가능
+    width/height 설정 가능
+    */
+    display: inline-block;
+    padding-top:20px;
+    margin:10px;
+    width:400px;
+    height: 50px;
+    background:#25a04d;
+    color:#ffd219;
+}
+
+.ghost_style_link {
+    display: inline-block;
+    margin:1rem;
+    padding:1em 1em 1em 1em;
+    border:1px solid #25a04d;
+    border-radius: 5px;
+    font-size:1rem;
+    font-weight: bold;    
+    text-decoration: none;
+    color:#25a04d;
+    transition: all 0.4s ease;
+}
+
+.ghost_style_link:hover {
+    color:#fff;
+    background:#25a04d;
+}
+
+.gallery_img {
+    width:200px;
+    height:auto;
+    margin:20px;
+    border:2px solid #ddd;
+    padding:10px;
+    background: #f0f0f0;
+}

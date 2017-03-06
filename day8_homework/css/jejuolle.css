@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+html {
+    overflow-y:scroll;
+    font-size:10px;
+    font-family: "Spoqa Han Sans";
+}
+
+body {
+    margin: 0 auto;
+    font-size: 14px;
+    background: url("../images/leading-21px.png");
+}
+
+h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom:2.1rem;
+    color:#333;
+}
+
+h2, h3, h4 {
+    line-height:4.2rem;
+}
+
+h2 {
+    font-size:3.418rem;
+}
+
+h3 {
+    font-size:2.734rem;
+}
+
+h4 {
+    font-size:2.188rem;
+}
+
+h5 {
+    font-size:1.75rem;
+    line-height: 2.1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom:1.5em;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.025em;
+    color: #666;
+
+}
+
+.container {
+    width:1060px;
+    margin:0 auto;
+}
+
+.header {
+    margin:6.3rem 0;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.header .visual {
+    width:100%;
+    margin-top: 4.2rem;
+    background: url("../images/visual_bg.jpg")no-repeat;
+    text-align: right;
+    padding-top:357px;
+}
+
+.header .visual h4 {
+    margin-right:20px;
+    color:#fff;
+}
+
+a {
+    display: inline-block;
+    margin:-2.1rem 0 4.1rem 0;
+    padding:0.5em 1em;
+    border-radius: 2.1rem;
+    font-size:1.75rem;
+    color:#ff9640;
+    border:1px solid #ff9640;
+    text-decoration: none;
+    vertical-align: top;
+    transition: 0.4s ease;
+}
+
+a:hover, a:focus {
+    background:#ff9640;
+    color:#fff;
+}
+
+a:visited {
+    color:#ffbb84;
+}
+
+a:active {
+    background:#ff9640;
+    color:#fff;
+    text-decoration: underline;
+}
+
+.header .visual a.btnL {
+    margin-right: 10px;
+}
+
+.header .visual a.btnR {
+    margin-right: 20px;
+}
+.main {
+    margin-bottom: 6.3rem;
+}
+
+.main .txt {
+    margin-bottom: 4.2rem;
+}
+
+.main ul {
+    margin:0;
+    padding: 0;
+} 
+
+.main li {
+    width:100%;
+    height:147px;
+    margin-bottom: 4.2rem;
+    list-style: none;
+}
+
+.main li img {
+    float:left;
+    margin-right: 20px;
+    border:1px solid #ddd;
+    vertical-align: top;
+}
+
+
+.footer {
+    background: #f0f0f0;
+    border-radius: 5px;
+    border:1px solid #ddd;
+    text-align:center;
+    margin-bottom: 6.3rem;
+}
+
+.footer p {
+    margin-top: 2.1rem;
+}

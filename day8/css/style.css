@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+html {
+    overflow-y:scroll;
+    /* 축 변동을 방지하기 위해서 작성 */
+}
+
+.v-hidden {
+    color:red;
+    visibility: hidden;  /*공간은 남겨두고, 보이지는 않음*/
+}
+
+.hidden {
+    display: none; /*공간도 없애버림*/
+    color:blue;
+}
+
+
+.demo {
+    width:500px;
+    height: 340px;
+    padding:1em;
+    margin:3em auto;
+    border:5px solid #ddd;    
+}
+
+.o-visible {
+    overflow: visible;
+    /* 기본값 */
+}
+
+.o-hidden {
+    overflow: hidden;
+}
+
+
+.o-scroll {
+    overflow: scroll;
+    /* overflow-x: scroll; */
+    /* overflow-y: scroll; */
+}
+
+.o-auto {
+    overflow: auto;
+}
+
+
+.dropcap {
+    width: 50%;
+    line-height: 1.5;
+}
+
+.dropcap_first-child {
+    float:left;
+    margin-right:15px;
+    color:red;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+
+.dropcap::first-letter {
+    float:left;
+    margin-right: 15px;
+    font-weight: bold;
+    color:red;
+    font-size: 30px;
+    line-height: 1;
+}
+
+/* div > p 자식엘리먼트 */
+/* div p 자손엘리먼트 */
+
+
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.article {
+    font-size:40px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.article_media {
+    float:left;
+    margin-right: 20px;
+}
+
+.article p {
+    margin-bottom: 1.5em;
+}

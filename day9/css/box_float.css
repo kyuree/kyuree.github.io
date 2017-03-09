@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+    margin:4rem;
+}
+
+.box {
+    width: 100px;
+    height:100px;
+    border:10px solid #eee;
+    text-align:center;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+
+.red {
+    color:red; border-color:currentColor;
+}
+
+.green {
+    color:green; border-color:currentColor;
+}
+
+.blue {
+    color:dodgerblue; border-color:currentColor;
+}
+
+.clear {
+    clear: both;
+    visibility: none;
+}
+

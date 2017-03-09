@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+body {
+    margin:0;
+    height: 100vh;
+    background: radial-gradient(circle,#ddd, #333 50%);
+    /*background: radial-gradient(circle,#ddd 0%, #333 100%);
+    location - 값 조절
+
+    background: linear-gradient
+    */
+}
+
+img {
+    vertical-align: top;
+}
+
+.album {
+    position:absolute;
+    width: 300px;
+    height:300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.album * {
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+
+.album_cover {
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.4);
+    /*box-shadow: x, y, blur spread color;*/
+    border-radius:2px;
+}
+
+.album_disk {
+    top: 0;
+    left: 71px;
+}
+
+.album_disk.is-rotate {
+    animation: rotate-disk 3s infinite;
+}
+
+@keyframes rotate-disk {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+
+.album_sleeve {
+
+left: 255px;
+
+top: -6px;
+}

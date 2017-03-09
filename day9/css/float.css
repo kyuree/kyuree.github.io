@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+:root {
+  --light-tan: #fbf1e3;
+  --light-khaki: #fbf6e4;
+  --pale-grey: #f6f8f8;
+  --light-tan-two: #faebd7;
+  --beige: #faeae9;
+  --very-light-pink: #fdf8f1;
+  --pale-grey-two: #eadfe9;
+  --pale-grey-three: #f2f6f5;
+  --beige-two: #faebea;
+  --beige-three: #f7dcd5;
+  --light-tan-three: #fbf3e3;
+  --light-khaki-two: #f8e8da;
+}
+
+
+
+body {
+    margin:0;
+}
+
+.icon-box-container {
+
+}
+
+.icon-box {
+    float:left;
+    width:25%;
+    height:16.66666666666667vh;
+    background:#fff;
+    text-align:center;
+}
+
+.icon-box img {
+    vertical-align: top;
+}
+
+.light-tan {background: #fbf1e3;}
+.light-khaki {background: #fbf6e4;}
+.pale-grey {background: #f6f8f8;}
+.light-tan-two {background: #faebd7;}
+.beige {background: #faeae9;}
+.very-light-pink {background: #fdf8f1;}
+.pale-grey-two {background: #eadfe9;}
+.pale-grey-three {background: #f2f6f5;}
+.beige-two {background: #faebea;}
+.beige-three {background: #f7dcd5;}
+.light-tan-three {background: #fbf3e3;}
+.light-khaki-two {background: #f8e8da;}
+
+
+

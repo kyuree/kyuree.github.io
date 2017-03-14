@@ -1,0 +1,70 @@
+@charset "utf-8"
+
+body {
+    margin:0;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+}
+
+div, p {
+    position: absolute;
+}
+
+img {
+    vertical-align: top;
+}
+
+.banner {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 800px;
+    height: 320px;
+    margin: auto;
+    background: url("../images/sample.jpg") no-repeat;
+}
+
+
+p.text {
+    display: block;
+    top: -7px;
+    left: 122px;
+    width: 300px;
+    font-size:33px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 35px;
+    color:#fff;
+    text-shadow: rgba(1,1,1,0.6) 0 0 4px;
+    z-index: 10;
+}
+
+.sn-logo {
+    top: 18px;
+    left: 18px;
+    z-index: 20;
+}
+
+.kingkong {
+    top: 28px;
+    left: 491px;
+    z-index: 40
+}
+
+.golliras {
+    top: 110px;
+    left: 11px;
+    z-index: 30;
+}
+
+.apes {
+    bottom: 93px;
+    left: 4px;
+    z-index: 10;
+}
+
+.bg {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

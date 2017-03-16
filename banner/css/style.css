@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 
 body {
     margin:0;
@@ -28,8 +28,8 @@ img {
 p.text {
     display: block;
     top: -7px;
-    left: 122px;
-    width: 300px;
+    left: -500px;
+    width: 320px;
     font-size:33px;
     font-weight: bold;
     font-style: italic;
@@ -37,34 +37,69 @@ p.text {
     color:#fff;
     text-shadow: rgba(1,1,1,0.6) 0 0 4px;
     z-index: 10;
+    transition: left 0.4s ease 0.5s;
 }
 
 .sn-logo {
     top: 18px;
     left: 18px;
     z-index: 20;
+    transform: scale(2);
+    opacity: 0;
+    transition: all 0.2s ease 0.4s;
 }
 
 .kingkong {
     top: 28px;
-    left: 491px;
-    z-index: 40
+    right:-400px;
+    z-index: 40;
+    transition: right 0.2s ease 0.9s;
 }
 
 .golliras {
-    top: 110px;
+    top: -200px;
     left: 11px;
     z-index: 30;
+    transition: top 0.4s ease 0.15s;
 }
 
 .apes {
-    bottom: 93px;
+    bottom: -102px;
     left: 4px;
     z-index: 10;
+    transition: bottom 0.2s ease;
 }
 
 .bg {
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+
+
+
+/* 상태디자인 */
+.banner:hover .apes {
+    bottom: 93px;
+}
+
+.banner:hover .golliras {
+    top: 110px;
+
+}
+
+.banner:hover .kingkong {
+    right:12px;
+}
+
+.banner:hover .sn-logo {
+    top: 18px;
+    transform: scale(1);
+    opacity: 100;
+    
+}
+
+.banner:hover .text {
+    left: 122px;
 }

@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/*! grid-system.css ⓒkim kyuree 2017 */
+/*
+page-width:1180px
+colume-width:60px
+column-count: 15
+gutter-direction:after (margin-right) need .last, .omega
+gutter-width:20px
+*/
+
+html {
+   overflow-y: scroll; 
+}
+
+.grid-toggle-btn {
+  cursor: pointer;
+  position: fixed;
+  z-index: 10000;
+  top: 10px;
+  right: 10px;
+  border: none;
+  padding: 1em 2em;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.grid-toggle-btn:hover,
+.grid-toggle-btn:focus {
+  background: #fe4940;
+}
+
+
+
+/* container module */
+
+.show-grid {
+    background: linear-gradient(transparent 23px, hsla(23, 40%, 73%, 0.78) 23px);
+    background-size: 1px 24px;
+}
+
+
+
+
+/*
+.container 
+.row, clearfix
+.col-1 ~ col-15
+.push-1 ~ push-15
+.pre-1 ~ pre-2 
+.post-1 ~ post-15
+.last, .omega
+*/
+
+.container {
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show-grid .container {
+    position: relative;
+}
+
+.show-grid .container::before {
+    content: "";
+    position: absolute;
+    z-index: 10000;
+    top:0;
+    left:0;
+    right:0;
+    height: 200vh;
+    /* background: url(../images/960__10-60-10.png); 실제 이미지 사용방법 */
+    
+    /* CSS 배경 이미지 기술 활용 : 선형 그레디언트 (linear-gradient) */    
+    background: linear-gradient(90deg, hsla(32, 90%, 92%, 0.55) 0px, hsla(32, 90%, 92%, 0.55) 60px, transparent 60px, transparent 80px);
+    background-size: 80px 1px;    
+}
+
+.row::after, .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-1 {width:60px;}
+.col-2 {width:140px;}
+.col-3 {width:220px;}
+.col-4 {width:300px;}
+.col-5 {width:380px;}
+.col-6 {width:460px;}
+.col-7 {width:540px;}
+.col-8 {width:620px;}
+.col-9 {width:700px;}
+.col-10 {width:780px;}
+.col-11 {width:860px;}
+.col-12 {width:940px;}
+.col-13 {width:1020px;}
+.col-14 {width:1100px;}
+.col-15 {width:1180px;}
+
+.push-1 {margin-left:60px;}
+.push-2 {margin-left:140px;}
+.push-3 {margin-left:220px;}
+.push-4 {margin-left:300px;}
+.push-5 {margin-left:380px;}
+.push-6 {margin-left:460px;}
+.push-7 {margin-left:540px;}
+.push-8 {margin-left:620px;}
+.push-9 {margin-left:700px;}
+.push-10 {margin-left:780px;}
+.push-11 {margin-left:860px;}
+.push-12 {margin-left:940px;}
+.push-13 {margin-left:1020px;}
+.push-14 {margin-left:1100px;}
+.push-15 {margin-left:1180px;}
+
+
+
+.pre-1, .pre-2, .pre-3, .pre-4, .pre-5, .pre-6, .pre-7, .pre-8, .pre-9, .pre-10, .pre-11, .pre-12, .pre-13, .pre-14, .pre-15, .post-1, .post-2, .post-3, .post-4, .post-5, .post-6, .post-7, .post-8, .post-9, .post-10, .post-11, .post-12, .post-13, .post-14, .post-15 {
+    position: relative;
+}
+
+.pre-1 {left:60px;}
+.pre-2 {left:140px;}
+.pre-3 {left:220px;}
+.pre-4 {left:300px;}
+.pre-5 {left:380px;}
+.pre-6 {left:460px;}
+.pre-7 {left:540px;}
+.pre-8 {left:620px;}
+.pre-9 {left:700px;}
+.pre-10 {left:780px;}
+.pre-11 {left:860px;}
+.pre-12 {left:940px;}
+.pre-13 {left:1020px;}
+.pre-14 {left:1100px;}
+.pre-15 {left:1180px;}
+
+.post-1 {right:60px;}
+.post-2 {right:140px;}
+.post-3 {right:220px;}
+.post-4 {right:300px;}
+.post-5 {right:380px;}
+.post-6 {right:460px;}
+.post-7 {right:540px;}
+.post-8 {right:620px;}
+.post-9 {right:700px;}
+.post-10 {right:780px;}
+.post-11 {right:860px;}
+.post-12 {right:940px;}
+.post-13 {right:1020px;}
+.post-14 {right:1100px;}
+.post-15 {right:1180px;}
+
+
+.last {margin-right: 0px;}
+.omega {margin-right: 0px;}
+
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15 {
+    float:left;
+    background: #666;
+    height:48px;
+    text-align: center;
+    margin-bottom: 24px;
+    color:#fff;
+    }

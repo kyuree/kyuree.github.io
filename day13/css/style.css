@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.page-header {
+
+}
+
+.header-top {
+    background:#555555;
+}
+
+.header-top li {
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left:2px solid #fff;
+}
+
+.header-top li:last-child {
+    border:none;
+}
+
+.header-top a {
+    padding:0 15px 1px 15px;
+    font-size:12px;
+    color:#fff;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.header-top .search {
+    width: 235px;
+}

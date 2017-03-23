@@ -2,7 +2,9 @@
 
 /*! grid-system.css ⓒkim kyuree 2017 */
 
-
+html {
+   overflow-y: scroll; 
+}
 
 .grid-toggle-btn {
   cursor: pointer;
@@ -17,7 +19,6 @@
   border-radius: 4px;
   transition: all 0.4s;
 }
-
 .grid-toggle-btn:hover,
 .grid-toggle-btn:focus {
   background: #fe4940;
@@ -33,7 +34,7 @@
 }
 
 .container {
-    width:960px;
+    width:1020px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -53,12 +54,10 @@
     /* background: url(../images/960__10-60-10.png); 실제 이미지 사용방법 */
     
     /* CSS 배경 이미지 기술 활용 : 선형 그레디언트 (linear-gradient) */    
-    background: linear-gradient(90deg, transparent 10px, hsla(32, 90%, 92%, 0.55) 10px, hsla(32, 90%, 92%, 0.55) 70px, transparent 70px);
-    background-size: 80px 1px;    
+    background: linear-gradient(90deg, transparent 10px, hsla(32, 90%, 92%, 0.55) 10px, hsla(32, 90%, 92%, 0.55) 75px, transparent 75px);
+    background-size: 85px 1px;    
 }
 
-
-/* rowmodule */
 .row {
     margin-bottom:24px;
 }
@@ -69,25 +68,24 @@
     clear: both;
 }
 
-/* col module */
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     float: left;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.col-1 { width:60px; }
-.col-2 { width:140px; }
-.col-3 { width:220px; }
-.col-4 { width:300px; }
-.col-5 { width:380px; }
-.col-6 { width:460px; }
-.col-7 { width:540px; }
-.col-8 { width:620px; }
-.col-9 { width:700px; }
-.col-10 { width:780px; }
-.col-11 { width:860px; }
-.col-12 { width:940px; }
+.col-1 { width:65px; }
+.col-2 { width:150px; }
+.col-3 { width:235px; }
+.col-4 { width:320px; }
+.col-5 { width:405px; }
+.col-6 { width:490px; }
+.col-7 { width:575px; }
+.col-8 { width:660px; }
+.col-9 { width:745px; }
+.col-10 { width:830px; }
+.col-11 { width:915px; }
+.col-12 { width:1000px; }
 
 
 
@@ -95,43 +93,46 @@
 margin, position*/
 
 
-.push-1 {margin-left:90px;}
-.push-2 {margin-left:170px;}
-.push-3 {margin-left:250px;}
-.push-4 {margin-left:330px;}
-.push-5 {margin-left:410px;}
-.push-6 {margin-left:490px;}
-.push-7 {margin-left:570px;}
-.push-8 {margin-left:650px;}
-.push-9 {margin-left:730px;}
-.push-10 {margin-left:810px;}
-.push-11 {margin-left:890px;}
+.push-1 {margin-left:95px;}
+.push-2 {margin-left:180px;}
+.push-3 {margin-left:265px;}
+.push-4 {margin-left:350px;}
+.push-5 {margin-left:435px;}
+.push-6 {margin-left:520px;}
+.push-7 {margin-left:605px;}
+.push-8 {margin-left:690px;}
+.push-9 {margin-left:775px;}
+.push-10 {margin-left:860px;}
+.push-11 {margin-left:945px;}
 
 
 
 /*pre, post module
 position*/
 .pre-1, .pre-2, .pre-3, .pre-4, .pre-5, .pre-6, .pre-7, .pre-8, .pre-9, .pre-10, .pre-11, .post-1, .post-2, .post-3, .post-4, .post-5, .post-6, .post-7, .post-8, .post-9, .post-10, .post-11, .post-12 {position: relative;} 
-.pre-1 {left:80px;}
-.pre-2 {left:160px;}
-.pre-3 {left:240px;}
-.pre-4 {left:320px;}
-.pre-5 {left:400px;}
-.pre-6 {left:480px;}
-.pre-7 {left:560px;}
-.pre-8 {left:640px;}
-.pre-9 {left:720px;}
-.pre-10 {left:800px;}
-.pre-11 {left:880px;}
+.pre-1 {left:85px;}
+.pre-2 {left:170px;}
+.pre-3 {left:255px;}
+.pre-4 {left:340px;}
+.pre-5 {left:425px;}
+.pre-6 {left:510px;}
+.pre-7 {left:595px;}
+.pre-8 {left:680px;}
+.pre-9 {left:765px;}
+.pre-10 {left:850px;}
+.pre-11 {left:935px;}
 
-.post-1 {right:80px;}
-.post-2 {right:160px;}
-.post-3 {right:240px;}
-.post-4 {right:320px;}
-.post-5 {right:400px;}
-.post-6 {right:480px;}
-.post-7 {right:560px;}
-.post-8 {right:640px;}
-.post-9 {right:720px;}
-.post-10 {right:800px;}
-.post-11 {right:880px;}
+.post-1 {right:85px;}
+.post-2 {right:170px;}
+.post-3 {right:255px;}
+.post-4 {right:340px;}
+.post-5 {right:425px;}
+.post-6 {right:510px;}
+.post-7 {right:595px;}
+.post-8 {right:680px;}
+.post-9 {right:765px;}
+.post-10 {right:850px;}
+.post-11 {right:935px;}
+
+
+.floatRight {float:right;}

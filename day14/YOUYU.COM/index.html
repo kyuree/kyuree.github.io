@@ -25,9 +25,12 @@
                 </div>
                 <div class="search-bar col-6 post-2">
                     <h2 class="a11y-hidden">검색 영역</h2>
-                    <form action="">
+                    <form action="/">
                         <label for="search" class="a11y-hidden">검색</label>
-                        <input type="text" for="search" placeholder="검색어를 입력해주세요." id="search">
+                        <input type="text" placeholder="검색어를 입력해주세요." id="search">
+                        <!-- WAI-ARIA 로 대신할 수 있음
+                        <input input aria-label="희망사항" type="text" placeholder="검색어를 입력해주세요." id="search">
+                        -->
                     </form>
                 </div>
             </div>
@@ -55,7 +58,7 @@
                 </div>
                 <div class="layer">
                     <div class="age row">
-                        <h5></h5>
+                        <h5>연령대</h5>
                         <ul>
                             <li><a href="">10대</a></li>
                             <li><a href="">20대</a></li>
@@ -63,7 +66,7 @@
                         </ul>
                     </div>
                     <div class="style row">
-                        <h5></h5>
+                        <h5>스타일</h5>
                         <ul>
                             <li><a href="">소녀룩</a></li>
                             <li><a href="">모던시크</a></li>
@@ -116,7 +119,15 @@
                         <img src="images/sample_product.jpg" alt="제품이미지">
                         <h6>Zemma World</h6>
                         <p>Puppy - 코튼니트</p>
-                        <p class="price">39,000원<i></i></p>
+                        <p class="price">39,000원
+                            <button type="button" class="like_button">like</button>
+                            <!-- plan A    
+                            <button type="button" class="like_button">like</button>
+                            -->
+                            <!-- plan B
+                            <a role="button" href="" class="like_button">like</a>
+                            -->
+                        </p>
                     </a></li>
                     <li><a href="">
                         <img src="images/sample_product.jpg" alt="제품이미지">
@@ -147,22 +158,22 @@
                         <li><a href="">
                             <img src="images/sample_brand.jpg" alt="">
                             <h6>01. mixxmix<i></i></h6>
-                            <h6 class="logo"><img src="images/sample_brandLogo.png"></h6>
+                            <h6 class="logo"><img src="images/sample_brandLogo.png" alt="mixxmix_logo"></h6>
                         </a></li>
                         <li><a href="">
                             <img src="images/sample_brand.jpg" alt="">
                             <h6>02. mixxmix<i></i></h6>
-                            <h6 class="logo"><img src="images/sample_brandLogo.png"></h6>
+                            <h6 class="logo"><img src="images/sample_brandLogo.png" alt="mixxmix_logo"></h6>
                         </a></li>
                         <li><a href="">
                             <img src="images/sample_brand.jpg" alt="">
                             <h6>03. mixxmix<i></i></h6>
-                            <h6 class="logo"><img src="images/sample_brandLogo.png"></h6>
+                            <h6 class="logo"><img src="images/sample_brandLogo.png" alt="mixxmix_logo"></h6>
                         </a></li>
                         <li><a href="">
                             <img src="images/sample_brand.jpg" alt="">
                             <h6>04. mixxmix<i></i></h6>
-                            <h6 class="logo"><img src="images/sample_brandLogo.png"></h6>
+                            <h6 class="logo"><img src="images/sample_brandLogo.png" alt="mixxmix_logo"></h6>
                         </a></li>
                     </ul>
                     
@@ -227,6 +238,9 @@
                             <li><a href="">좋아요</a></li>
                             <li><a href="">아주 좋아요</a></li>
                         </ul>
+
+                        
+
                     </a></li>
                     <li><a href="">
                         <img src="images/sample_review.jpg" alt="제품이미지">

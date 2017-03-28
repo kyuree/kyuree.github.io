@@ -112,6 +112,7 @@ caption.a11y-hidden { position: static; }
 .gnb a:hover, nav a:focus {
     color:#991717;
     border-bottom:2px solid #bf1d1d;
+    outline: none;
 }
 
 .gnb a.select, .gnb a:active {
@@ -119,9 +120,6 @@ caption.a11y-hidden { position: static; }
     background: #bf1d1d;
     border-radius: 2px;
 }
-
-.gnb a:focus {outline: none;}
-
 
 /* filter */
 
@@ -132,9 +130,17 @@ caption.a11y-hidden { position: static; }
 }
 
 .filter .title {
+    display: block;
     color:#991717;
     font-weight: bold;
     line-height: 41px;
+    text-align:center;
+    border:1px solid transparent;
+    border-top:none;
+}
+
+.filter .title:hover {
+    border-color:#bf1d1d;
 }
 
 .filter i {
@@ -153,16 +159,19 @@ caption.a11y-hidden { position: static; }
 .banner {margin-top: 40px;}
 
 .img-area li,
-.carousel li {
-    display: inline-block;
-}
+
 
 .img-area li a {
     display: block;
     border:2px solid transparent;
 }
 
-.img-area li a:hover {border-color: #bf1d1d;}
+.img-area li.select a,
+.img-area li a:focus,
+.img-area li a:hover {
+    border-color: #bf1d1d;
+    outline: none;
+}
 
 .banner .carousel {
     margin-left:32px;
@@ -171,8 +180,9 @@ caption.a11y-hidden { position: static; }
 
 
 /* carousel 공통 */
-
-.carousel li {margin-right:7px;}
+.carousel li {
+    display: inline-block;
+    margin-right:7px;}
 
 .carousel li:last-child {margin-right:0;}
 
@@ -188,8 +198,10 @@ caption.a11y-hidden { position: static; }
 }
 
 .carousel li a:hover,
+.carousel li a:focus,
 .carousel li.select a {
     background:#bf1d1d;
+    outline: none;
 }
 
 
@@ -244,12 +256,8 @@ caption.a11y-hidden { position: static; }
     background: url("../images/ico_like.png");
 }
 
-.product .price i.like {
+.product .price i:hover, .product li.like .price i {
     background: url("../images/ico_like_select.png");
-}
-
-.product .price i.like {
-    background: url("../images/ico_like2_select.png");
 }
 
 .product .grade {
@@ -266,7 +274,7 @@ caption.a11y-hidden { position: static; }
     text-indent: -9999px;
 }
 
-.product .grade .select {
+.product .grade li:hover, .product .grade .select {
     background:url("../images/ico_grade_select.png") no-repeat;
 }
 
@@ -300,8 +308,10 @@ caption.a11y-hidden { position: static; }
 
 .brand h6 {
     position: absolute;
+    left:0;
+    right:0;
     bottom:-22px;
-    width:100%;
+    padding:2px 10px;
     font-weight: bold;
     color:#fff;
     background: rgba(0, 0, 0, 0.5)
@@ -312,7 +322,28 @@ caption.a11y-hidden { position: static; }
     float: right;
     width: 15px;
     height: 14px;
+    margin-top:4px;
     background: url("../images/ico_like2.png");
+}
+
+.brand h6 i.select,
+.brand h6 i:hover {
+    background: url("../images/ico_like2_select.png");
+}
+
+.brand .logo {
+    display: block;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    max-width:180px;
+    height:30px;
+    margin:auto;
+    padding:0;
+    background:none;
+    text-align:center;
 }
 
 .brand .btn {
@@ -385,6 +416,7 @@ caption.a11y-hidden { position: static; }
 }
 
 .sns_partner {
+    position: relative;
     margin-top: -18px;
     margin-bottom:21px;
 }
@@ -411,8 +443,10 @@ caption.a11y-hidden { position: static; }
 
 .sns a:hover {background-position-y:0;}
 
-.partner {
+.sns_partner .partner {
     display: block;
+    position: absolute;
+    right:57px;
     margin-top:-21px;
 }
 

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.page-wrapper {
+    background: #fff;
+    margin-top:80vh;
+    padding-top:40px;
+    min-height: 200vh;
+}
+
+.page {max-width:1080px;}
+
+
+
+.sports {
+    padding-bottom:40%;
+    background-image: url("http://lorempixel.com/1000/400/sports/5/");
+}
+
+.sports h2 {
+    font-weight: bold;
+    font-size:5rem;
+}
+
+
+.coffee {
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    right:0;
+    background-image: url(../images/siebe-warmoeskerken-220952.jpg);
+    height:100vh;
+    display: flex;
+    flex-flow: :column;
+    align-items:center;
+}
+
+
+
+
+
+.page-header-headline {
+    margin-top: 170px;
+
+}
+
+.page-header-headline, .slogan {
+    #fff;
+}
+
+.slogan {
+    font-size:0.9rem;
+}
+
+.towner {
+    height:480px;
+}

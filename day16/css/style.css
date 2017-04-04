@@ -1,0 +1,18 @@
+@charset "utf-8";
+.box {        
+        color:#666;
+        
+    }
+
+.boxes .is-1 {background:hsla(0, 59%, 54%, 1);}
+.boxes .is-2 {background:hsla(30, 59%, 54%, 1);}
+.boxes .is-3 {background:hsla(60, 59%, 54%, 1);}
+.boxes .is-4 {background:hsla(120, 59%, 54%, 1);}
+.boxes .is-5 {background:hsla(150, 59%, 54%, 1);}
+.boxes .is-6 {background:hsla(180, 59%, 54%, 1);}
+.boxes .is-7 {background:hsla(210, 59%, 54%, 1);}
+.boxes .is-8 {background:hsla(240, 59%, 54%, 1);}
+.boxes .is-9 {background:hsla(270, 59%, 54%, 1);}
+.boxes .is-10) {background:hsla(300, 59%, 54%, 1);}
+.boxes .is-11 {background:hsla(330, 59%, 54%, 1);}
+.boxes .is-12 {background:hsla(360, 59%, 54%, 1);}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +17,18 @@
             <h1 class="col-4 float_left logo"><img src="images/logo.png" alt="사람과 인물중심 지역미디어 파주 人 해피코리아"></h1>
             <div class="col-5 pre-6 search-bar">
                 <form action="/">
-                    <label for="search"></label>
-                    <input type="text" id="search" class="search-input" placeholder="검색">
-                    <button><span class="a11y-hidden">검색하기</span></button>
+                    <label for="search" class="a11y-hidden">검색</label>
+                    <input type="text" id="search" class="search-input" placeholder="검색어를 입력해주세요.">
+                    <button type="submit" class="a11y-hidden">검색하기</span></button>
                 </form>
             </div>
             <ul class="col-2 post-1 weather">
                 <li>2017.04.03 (월)</li>
-                <li><span class="thumb"><img src="images/ico_sunny.png" alt="맑음"></span>서울 21.2℃</li>
+                <li>
+                    <span class="thumb">
+                        <img src="images/ico_sunny.png" alt="맑음"></span>
+                    서울 21.2℃
+                </li>
             </ul>
         </div>
         <nav class="page-nav">
@@ -33,12 +37,12 @@
                     <li><a href="/">홈</a></li>
                     <li><a href="/">해코통통</a></li>
                     <li><a href="/">뉴스룸</a></li>
-                    <li><a href="/">인물&활동</a></li>
+                    <li><a href="/">인물&amp;활동</a></li>
                     <li><a href="/">여론조사</a></li>
                 </ul>
                 <div class="col-3 pre-4 login_join">
-                    <button>회원가입</button>
-                    <button>로그인</button>
+                    <button type="button">회원가입</button>
+                    <button type="button">로그인</button>
                 </div>
             </div>
         </nav>
@@ -49,22 +53,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <mian class="page-main">
+    <main class="page-main">
         <div class="container row guide">
             <div class="col-10 float-left main-contents">
                 <div class="video">
@@ -75,7 +64,7 @@
                 </div>
                 <div class="container col-10 row in-col">
                     <div class="float-left col-7 plan-news">
-                        <h5>기획&뉴스</h5>
+                        <h5>기획&amp;뉴스</h5>
                         <ul>
                             <li class="img-list">
                             <a href="/">    
@@ -214,33 +203,50 @@
                             <h6><span>진행중</span>12년만에 개편된 "주택용 전기요금" 당신의 선택은</h6>
                             <form action="">
                                 <ul>
+<!--
+                                    암시적 레이블 작성 방법
                                     <li>
-                                        <a href="">
-                                        <label for="answer1"></label>
-                                        <input type="radio" id="answer1">
-                                    재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
-                                        </a>
+                                        <label>
+                                            <input type="radio" name="research" value="answer1">
+                                            재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
+                                        </label>
+                                    </li>-->
+                                    <!-- 스프라이트 이미지 사용 -->
+                                    <li>
+                                        <div class="poll-radio2">
+                                            <input type="radio" id="answer-2" name="research" value="answer1">
+                                            <span class="icon-radio"></span>
+                                            <label for="answer-2">
+                                                재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
+                                            </label>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="">
-                                        <label for="answer1"></label>
-                                        <input type="radio" id="answer1">
-                                    재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
-                                        </a>
+                                        <div class="poll-radio2">
+                                            <input type="radio" id="answer-2" name="research" value="answer1">
+                                            <span class="icon-check"></span>
+                                            <label for="answer-2">
+                                                재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
+                                            </label>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="">
-                                        <label for="answer1"></label>
-                                        <input type="radio" id="answer1">
-                                    재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
-                                        </a>
+                                        <div class="poll-radio">
+                                            <input type="radio" id="answer-3" name="research" value="answer1">
+                                            <span class="icon-radio"></span>
+                                            <label for="answer-3">
+                                                재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
+                                            </label>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="">
-                                        <label for="answer1"></label>
-                                        <input type="radio" id="answer1">
-                                    재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
-                                        </a>
+                                        <div class="poll-radio">
+                                            <input type="radio" id="answer-4" name="research" value="answer1">
+                                            <span class="icon-radio"></span>
+                                            <label for="answer-4">
+                                                재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
+                                            </label>
+                                        </div>
                                     </li>
                                 </ul>
                             </form>
@@ -284,7 +290,7 @@
                 <div class="row ad-banner"><img src="images/ad_banner.jpg" alt=""></div>
             </div>
         </div>
-    </mian>
+    </main>
 
     <footer class="page-footer">
         <div class="top-footer">

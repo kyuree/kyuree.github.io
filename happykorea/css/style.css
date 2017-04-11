@@ -354,3 +354,110 @@ a:hover {
     font-weight: bold;
     color:#333;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 커스텀 라디오 버튼 */
+
+.poll-radio {
+    position: relative;
+}
+
+.poll-radio input {
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+
+/*라디오 버튼이 체크되지 않은 상태의 디자인 아이콘 이미지*/
+.poll-radio input + .icon-radio {
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-left:1px;
+    vertical-align: -6px;
+    background:url(../images/icon-radio-deactive.png) no-repeat;
+}
+
+/*라디오 버튼이 체크되지 않은 상태의 아이콘 이미지*/
+.poll-radio input:checked + .icon-radio {
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-left:1px;
+    vertical-align: -6px;
+    background:url(../images/icon-radio-active.png) no-repeat;
+}
+
+
+/*라디오 버튼이 체크되지 않은 상태의 디자인 아이콘 이미지*/
+.poll-radio2 input + .icon-radio {
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-left:-23px;
+    vertical-align: -6px;
+    background:url(../images/icon_sprites.png) no-repeat;
+
+    background-position: -69px -3px;
+}
+
+/*라디오 버튼이 체크되지 않은 상태의 아이콘 이미지*/
+.poll-radio2 input:checked + .icon-radio {
+    background-position: -46px -3px;
+}
+
+.poll-radio2 input + .icon-check {
+    background-position: 0 -3px;
+}
+.poll-radio2 input:checked + .icon-check {
+    background-position: -23px -3px;
+}
+
+.is-radio {}
+/* icon_sprites.png */
+
+
+.icon-radio-deactive, .ico_search, .ico_sunny, .icon-radio-active{
+	background: url(sprites.png) no-repeat;
+}
+
+.icon-radio-deactive{
+	background-position: -25px 0;
+	width: 20px;
+	height: 20px;
+}
+
+.ico_search{
+	background-position: -86px -4px ;
+	width: 15px;
+	height: 15px;
+}
+
+.ico_sunny{
+	background-position: -56px -1px ;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-radio-active{
+	background-position: 0 0;
+	width: 20px;
+	height: 20px;
+}
+
